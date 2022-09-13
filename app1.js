@@ -15,7 +15,7 @@ if (usuario == usuarioCorrecto && contrasenaCorrecta) {
 }
 
 //Solicitando compra
-
+/*
 let quimic = prompt(`Elija los productos que desea comprar:
 1. Ansul 30
 2. Nitro C
@@ -35,5 +35,38 @@ switch (quimic) {
     console.log("Lo sentimos, no has seleccionado ningún producto");
     break;
 }
+*/
 
+function producto(id, nombre, precio, inventario){
+  this.id = id;
+  this.nombre = nombre;
+  this.precio = precio;
+  this.inventario = inventario
+  this.mostrarStock = function () {
+    alert(`Tenemos ${this.inventario} unidades disponibles.`)
+  }
+  this.agregarStock = function (cantidad) {
+    this.inventario+- cantidad
+    alert(`Has agregado ${cantidad} ${this.nombre} al inventario.`)
+  }
+}
 
+let productos = [
+  new Producto(1, 'Ansul 30', 1200, 10),
+  new Producto(2, 'Nitro C', 900, 10),
+  new Producto(3, 'Urea Perlada', 800, 5),
+  new Producto(4, 'Urea Granulada', 1100, 5),
+]
+
+let carrito = []
+
+function addToCart(id, cant) {
+  let producto = productos.find(product => producto.id===id)
+  producto.cantidad = cant 
+  producto.total = producto.precio * cant
+  carrito.push(producto)
+}
+
+addToCart(3, 2)
+
+console.log(carrito)
