@@ -15,7 +15,7 @@ if (usuario == usuarioCorrecto && contrasenaCorrecta) {
 }
 
 //Solicitando compra
-/*
+
 let quimic = prompt(`Elija los productos que desea comprar:
 1. Ansul 30
 2. Nitro C
@@ -35,7 +35,6 @@ switch (quimic) {
     console.log("Lo sentimos, no has seleccionado ningún producto");
     break;
 }
-*/
 
 function producto(id, nombre, precio, inventario){
   this.id = id;
