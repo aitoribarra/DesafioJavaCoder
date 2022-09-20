@@ -19,17 +19,20 @@ if (usuario == usuarioCorrecto && contrasenaCorrecta) {
 let quimic = prompt(`Elija los productos que desea comprar:
 1. Ansul 30
 2. Nitro C
-3. Urea Perlada`);
+3. Urea Perlada
+4. Urea Granulada`);
 
 switch (quimic) {
   case "Ansul 30":
-    console.log(`Pedido: ${quimic}, valor $1200`);
+    console.log(`Pedido: ${quimic}, valor $11200`);
     break;
   case "Nitro C":
-    console.log(`Pedido: ${quimic}, valor $900`);
+    console.log(`Pedido: ${quimic}, valor $11900`);
     break;
   case "Urea Perlada":
-    console.log(`Pedido: ${quimic}, valor $800`);
+    console.log(`Pedido: ${quimic}, valor $11800`);
+  case "Urea Granulada":
+    console.log(`Pedido: ${quimic}, valor $11100`);
     break;
   default:
     console.log("Lo sentimos, no has seleccionado ningún producto");
@@ -51,10 +54,10 @@ function producto(id, nombre, precio, inventario){
 }
 
 let productos = [
-  new Producto(1, 'Ansul 30', 1200, 10),
-  new Producto(2, 'Nitro C', 900, 10),
-  new Producto(3, 'Urea Perlada', 800, 5),
-  new Producto(4, 'Urea Granulada', 1100, 5),
+  new Producto(1, 'Ansul 30', 11200, 10),
+  new Producto(2, 'Nitro C', 11900, 10),
+  new Producto(3, 'Urea Perlada', 11800, 5),
+  new Producto(4, 'Urea Granulada', 11100, 5),
 ]
 
 let carrito = []
