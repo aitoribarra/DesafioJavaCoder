@@ -41,8 +41,10 @@ const showProducts = (products) => {
 
         const button = document.getElementById(`button${product.id}`);
         button.addEventListener('click', () =>{
-            cartProducts(`${product.id}`);
-            alert 
-        });
+            //cartProducts(`${product.id}`);
+            alert(`Agregaste ${product.name}`)
+        })
     })
-} 
+};
+
+showProducts(cartProducts)

@@ -23,10 +23,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
+                    <a class="nav-link" href="#">Products</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#">Contact</a>
                   </li>
                   <li class="nav-item">
                     <button class="nav-link text-body"  data-bs-toggle="modal" data-bs-target="#exampleModal" id="open" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span id="counter"></span></a>
@@ -36,38 +36,29 @@
             </div>
           </nav>
     </header>
-    <section>
-        <div class="card" style="width: 18rem">
-            <img src="images/commodities-urea-perlada-630x315.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">Ansul 30</h5>
-                <p class="card-text">
-                    Mezcla física cristalina soluble apta para fertirriego.
-                </p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+    <main id="product-container">
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="card" style="width: 18rem">
-            <img src="images/chacarero-ansca-630x315.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">Urea Perlada</h5>
-                <p class="card-text">
-                    Urea Perlada como fuente de nitrógeno.
-                </p>
-                <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem">
-            <img src="images/chacarero-ansul-630x315.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">Nitro C</h5>
-                <p class="card-text">
-                    Mezcla física con nitrato de amonio y sulfato de calcio apta para aplicar al voleo.
-                </p>
-                <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-        </div>
-    </section>
+            </main>
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous" />
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
