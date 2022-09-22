@@ -13,10 +13,10 @@ class Productos {
 
 const cartProducts = [];
 
-const prod1 = new Productos("1", "Ansul 30", 11200, "src/images/commodities-urea-perlada-630x315.jpg", 1);
-const prod2 = new Productos("2", "Nitro C", 11900, "src/images/chacarero-ansul-630x315.jpg", 3);
-const prod3 = new Productos("3", "Urea Perlada", 11800, "src/images/chacarero-ansca-630x315.jpg, 2");
-const prod4 = new Productos("4", "Urea Granulada", 11100, "src/images/commodities-sulfato-de-amonio-630x315.jpg");
+const prod1 = new Productos("1", "Ansul 30", 11200, "images/commodities-urea-perlada-630x315.jpg", 1);
+const prod2 = new Productos("2", "Nitro C", 11900, "images/chacarero-ansul-630x315.jpg", 3);
+const prod3 = new Productos("3", "Urea Perlada", 11800, "images/chacarero-ansca-630x315.jpg, 2");
+const prod4 = new Productos("4", "Urea Granulada", 11100, "images/commodities-sulfato-de-amonio-630x315.jpg");
 
 cartProducts.push(prod1, prod2, prod3, prod4);
 //console.log(cartProducts)
